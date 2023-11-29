@@ -10,9 +10,9 @@ fun main() {
         val nome = readlnOrNull()
 
         println("Digite a XP do Herói: ")
-        var xp = readlnOrNull()?.toIntOrNull()
+        val xp = readlnOrNull()?.toIntOrNull()
 
-        var nivel = when {
+        val nivel = when {
             xp!! <= 1000 -> "Ferro"
             xp <= 2000 -> "Bronze"
             xp <= 5000 -> "Prata"
